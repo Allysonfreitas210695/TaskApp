@@ -10,6 +10,7 @@ import com.example.taskapp.R
 import com.example.taskapp.databinding.FragmentFormTaskBinding
 import com.example.taskapp.databinding.FragmentHomeBinding
 import com.example.taskapp.util.initToolBar
+import com.example.taskapp.util.showBottomSheet
 
 
 class FormTaskFragment : Fragment() {
@@ -44,7 +45,7 @@ class FormTaskFragment : Fragment() {
         if(description.isNotEmpty()){
             Toast.makeText(requireContext(), "Tudo Certo!!!", Toast.LENGTH_SHORT).show()
         }else {
-            Toast.makeText(requireContext(), "Preencha campo de descrição", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.description_empty_from_task_fragment)
         }
     }
 

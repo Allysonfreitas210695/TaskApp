@@ -10,6 +10,7 @@ import com.example.taskapp.R
 import com.example.taskapp.databinding.FragmentRecoverAccountBinding
 import com.example.taskapp.databinding.FragmentRegisterBinding
 import com.example.taskapp.util.initToolBar
+import com.example.taskapp.util.showBottomSheet
 
 
 class RecoverAccountFragment : Fragment() {
@@ -44,7 +45,7 @@ class RecoverAccountFragment : Fragment() {
         if(email.isNotEmpty()){
                 Toast.makeText(requireContext(), "Tudo Certo!!!", Toast.LENGTH_SHORT).show()
         }else {
-            Toast.makeText(requireContext(), "Preencha campo de email", Toast.LENGTH_SHORT).show()
+            showBottomSheet(message = R.string.email_empty)
         }
     }
 

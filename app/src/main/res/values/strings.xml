@@ -8,4 +8,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!-- Generic -->
+    <string name="text_title_warning">Atenção</string>
+    <string name="text_title_button">Entendi</string>
+    <string name="email_empty">Preencha seu email.</string>
+    <string name="password_empty">Preencha sua senha.</string>
+
+    <!-- Register Fragment -->
+    <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
+    <string name="password_empty_register_fragment">Preencha seu senha.</string>
+
+
+    <!-- From Task Fragment -->
+    <string name="description_empty_from_task_fragment">Preencha a descrição.</string>
+
 </resources>
