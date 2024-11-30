@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskAPP</string>
+
+    <!-- Status Task -->
+    <string name="status_task_todo">A Fazer</string>
+    <string name="status_task_doing">Fazendo</string>
+    <string name="status_task_done">Feitas</string>
+
+</resources>
