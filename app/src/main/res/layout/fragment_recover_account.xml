@@ -12,13 +12,34 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:backgroundTint="@color/color_default"
+            >
 
-    <LinearLayout
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="@drawable/baseline_arrow_back_24"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recuperar conta"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+
+                    />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,6 +50,7 @@
             tools:layout_editor_absoluteY="130dp">
 
             <TextView
+                android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Informe seu e-mail de casdatrado para receber um link para alteração da senha"
@@ -63,6 +85,7 @@
                 app:backgroundTint="@null" />
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

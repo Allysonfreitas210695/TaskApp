@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.taskapp.R
 import com.example.taskapp.databinding.FragmentLoginBinding
 import com.example.taskapp.databinding.FragmentRegisterBinding
+import com.example.taskapp.util.initToolBar
 
 
 class RegisterFragment : Fragment() {
@@ -22,6 +23,11 @@ class RegisterFragment : Fragment() {
     ): View {
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return  binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initToolBar(binding.toolbar)
     }
 
     override fun onDestroyView() {

@@ -55,5 +55,13 @@
             app:popUpTo="@id/authenticate"
             app:popUpToInclusive="true"
             />
+        <action
+            android:id="@+id/action_homeFragment_to_formTaskFragment"
+            app:destination="@id/formTaskFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/formTaskFragment"
+        android:name="com.example.taskapp.ui.fragment.FormTaskFragment"
+        android:label="fragment_form_task"
+        tools:layout="@layout/fragment_form_task" />
 </navigation>

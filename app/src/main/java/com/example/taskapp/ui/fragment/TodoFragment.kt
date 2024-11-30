@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.taskapp.R
 import com.example.taskapp.databinding.FragmentTodoBinding
 
 
@@ -23,7 +25,16 @@ class TodoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initListeners()
     }
+
+    private fun initListeners() {
+        binding.fabAdd.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_formTaskFragment)
+        }
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
