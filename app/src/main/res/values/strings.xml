@@ -1,25 +1,48 @@
 <resources>
     <string name="app_name">TaskAPP</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!-- Status Task -->
     <string name="status_task_todo">A Fazer</string>
     <string name="status_task_doing">Fazendo</string>
     <string name="status_task_done">Feitas</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_edit_password">Digite sua senha</string>
+    <string name="hint_edit_email">Digite seu e-mail</string>
 
 
     <!-- Generic -->
     <string name="text_title_warning">Atenção</string>
     <string name="text_title_button">Entendi</string>
+    <string name="email_text">E-mail</string>
+    <string name="password_text">Senha</string>
     <string name="email_empty">Preencha seu email.</string>
     <string name="password_empty">Preencha sua senha.</string>
 
     <!-- Register Fragment -->
     <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
     <string name="password_empty_register_fragment">Preencha seu senha.</string>
+    <string name="text_button_register_fragment">Criar conta</string>
+
+    <!-- Recover Account Fragment -->
+    <string name="text_info_recover_account">Informe seu e-mail de casdatrado para receber\n um link para alteração da senha</string>
+    <string name="text_text_toolbar_recover_account_fragment">Recuperar conta</string>
+    <string name="text_button_toolbar_recover_account_fragment">Recuperar conta</string>
+
+    <!-- Login Fragment -->
+    <string name="text_button_login_fragment">Login</string>
+    <string name="text_criar_conta_login_fragment">Criar conta</string>
+    <string name="text_recuperar_conta_login_fragment">Recuperar conta</string>
 
     <!-- From Task Fragment -->
     <string name="description_empty_from_task_fragment">Preencha a descrição.</string>
+    <string name="text_description_from_task_fragment">Descrição</string>
+    <string name="hint_description_from_task_fragment">Criar nova tela de login do app</string>
+    <string name="text_status_from_task_fragment">Status</string>
+    <string name="radio_todo_from_task_fragment">A Fazer</string>
+    <string name="radio_doing_from_task_fragment">Fazendo</string>
+    <string name="radio_done_from_task_fragment">Feitas</string>
 
+    <string name="text_button_from_task_fragment">Salvar</string>
 </resources>
