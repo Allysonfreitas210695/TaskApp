@@ -45,4 +45,11 @@
     <string name="radio_done_from_task_fragment">Feitas</string>
 
     <string name="text_button_from_task_fragment">Salvar</string>
+
+    <!-- Home Fragment -->
+    <string name="text_title_dialog_confirm_logout">Deseja sair da sua conta?</string>
+    <string name="text_button_dialog_confirm_logout">Confirma</string>
+    <string name="text_message_dialog_confirm_logout">Aperte em confirma para sair da sua conta.</string>
+
+
 </resources>
