@@ -61,10 +61,10 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="4dp"
-               android:background="@drawable/bg_edit"
                android:hint="Digite seu e-mail"
                android:inputType="textEmailAddress"
-               android:padding="16dp" />
+               style="@style/EditTextTheme"
+               />
 
            <TextView
                android:layout_width="wrap_content"
@@ -78,21 +78,19 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="4dp"
-               android:background="@drawable/bg_edit"
                android:hint="Digite sua senha"
+               style="@style/EditTextTheme"
                android:inputType="textPassword"
-               android:padding="16dp" />
+               />
 
            <com.google.android.material.button.MaterialButton
                android:id="@+id/btnRegister"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="10dp"
-               android:background="@drawable/bg_btn_text"
-               android:padding="16dp"
+               style="@style/ButtonTheme"
                android:text="Criar conta"
-               android:textColor="@color/color_default"
-               app:backgroundTint="@null" />
+                />
 
            <ProgressBar
                android:id="@+id/progressBar"

@@ -19,7 +19,6 @@
     <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
     <string name="password_empty_register_fragment">Preencha seu senha.</string>
 
-
     <!-- From Task Fragment -->
     <string name="description_empty_from_task_fragment">Preencha a descrição.</string>
 
