@@ -19,6 +19,13 @@
     <string name="password_text">Senha</string>
     <string name="email_empty">Preencha seu email.</string>
     <string name="password_empty">Preencha sua senha.</string>
+    <string name="error_generic">Ocorreu um erro! Por favor, tente novamente mais tarde!</string>
+    <string name="text_list_task_empty">Nenhuma tarefa cadastrada.</string>
+    <string name="text_laod_list_task">Aguarde, estamos carregando as informações.</string>
+    <string name="text_delete_success_task">Tarefa deltada com sucesso!</string>
+    <string name="text_button_dialog_confirm">Confirma</string>
+    <string name="text_title_dialog_delete">Deseja remover esta tarefa?</string>
+    <string name="text_message_dialog_delete">Aperte em confirma para remover a tarefa.</string>
 
     <!-- Register Fragment -->
     <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
@@ -29,6 +36,7 @@
     <string name="text_info_recover_account">Informe seu e-mail de casdatrado para receber\n um link para alteração da senha</string>
     <string name="text_text_toolbar_recover_account_fragment">Recuperar conta</string>
     <string name="text_button_toolbar_recover_account_fragment">Recuperar conta</string>
+    <string name="text_message_recover_account_fragment">Pronto, acabamos de enviar um link para seu e-mail.</string>
 
     <!-- Login Fragment -->
     <string name="text_button_login_fragment">Login</string>
@@ -43,12 +51,13 @@
     <string name="radio_todo_from_task_fragment">A Fazer</string>
     <string name="radio_doing_from_task_fragment">Fazendo</string>
     <string name="radio_done_from_task_fragment">Feitas</string>
+    <string name="text_save_success_from_task_fragment">Tarefa salva com sucesso.</string>
+    <string name="text_update_success_from_task_fragment">Tarefa atualizada com sucesso.</string>
 
     <string name="text_button_from_task_fragment">Salvar</string>
 
     <!-- Home Fragment -->
     <string name="text_title_dialog_confirm_logout">Deseja sair da sua conta?</string>
-    <string name="text_button_dialog_confirm_logout">Confirma</string>
     <string name="text_message_dialog_confirm_logout">Aperte em confirma para sair da sua conta.</string>
 
 

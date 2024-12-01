@@ -35,4 +35,10 @@
     <style name="BottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
+
+    <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:buttonTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>

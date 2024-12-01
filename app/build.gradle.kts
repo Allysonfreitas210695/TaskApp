@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-parcelize")
     id("com.google.gms.google-services")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -57,9 +58,11 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // Import the Firebase BoM
+    // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+    implementation("com.google.firebase:firebase-auth:23.1.0")
+    implementation("com.google.firebase:firebase-database:21.0.0")
 
-    // Import the Ferebase Autheticate
-    implementation("com.google.firebase:firebase-auth")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+
 }

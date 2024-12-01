@@ -25,6 +25,7 @@
                 >
 
                 <TextView
+                    android:id="@+id/textToolbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nova tarefa"
@@ -79,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:orientation="horizontal"
+                android:backgroundTint="@color/white"
                 app:layout_constraintTop_toBottomOf="@+id/textView2"
                 tools:layout_editor_absoluteX="16dp">
 
@@ -87,15 +89,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/white"
-                    android:textColorHint="@color/white"
-                    android:textColorHighlight="@color/white"
-                    android:shadowColor="@color/white"
-                    android:textColorLink="@color/white"
-                    android:text="@string/radio_todo_from_task_fragment"
                     android:checked="true"
-                    android:textColor="@color/white" />
-
+                    style="@style/CustomRadioButton"
+                    android:text="@string/radio_todo_from_task_fragment" />
                 <RadioButton
                     android:id="@+id/rbDoing"
                     android:layout_width="wrap_content"

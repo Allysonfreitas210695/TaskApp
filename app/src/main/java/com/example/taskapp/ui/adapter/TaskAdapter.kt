@@ -85,7 +85,7 @@ class TaskAdapter(
             Status.DONE -> {
                 holder.binding.btnNext.isVisible = false
 
-                holder.binding.btnBack.setOnClickListener { taskSelected(task, SELECT_DETAILS) }
+                holder.binding.btnBack.setOnClickListener { taskSelected(task, SELECT_BACK) }
             }
         }
     }

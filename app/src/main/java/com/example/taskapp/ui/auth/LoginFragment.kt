@@ -9,18 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.taskapp.R
 import com.example.taskapp.databinding.FragmentLoginBinding
+import com.example.taskapp.ui.fragment.BaseFragment
+import com.example.taskapp.util.FirebaseHelper
 import com.example.taskapp.util.showBottomSheet
 
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
-
-class LoginFragment : Fragment() {
+class LoginFragment : BaseFragment() {
 
     private var _binding: FragmentLoginBinding? = null
-    private  val binding get() = _binding!!
 
-    private lateinit var auth: FirebaseAuth
+    private  val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,8 +30,6 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        auth = Firebase.auth
 
         initListeners()
     }
@@ -60,7 +55,9 @@ class LoginFragment : Fragment() {
 
         if(email.isNotEmpty()){
             if(password.isNotEmpty()){
-                findNavController().navigate(R.id.action_global_homeFragment)
+                hideKeyboard() // escondedo teclado após fazer login
+                binding.progressBar.isVisible = true
+                loginUser(email, password)
             }else {
                 binding.progressBar.isVisible = false
                 showBottomSheet(message = getString(R.string.password_empty))
@@ -70,6 +67,25 @@ class LoginFragment : Fragment() {
             showBottomSheet(message = getString(R.string.email_empty))
         }
     }
+
+    private  fun loginUser(email: String, password: String) {
+
+        if (!FirebaseHelper.isAuthenticate()) {
+            FirebaseHelper.getAuth().signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                    binding.progressBar.isVisible = false
+                    if (task.isSuccessful) {
+                        findNavController().navigate(R.id.action_global_homeFragment)
+                    } else {
+                        showBottomSheet(message = task.exception?.message ?: "Erro no login")
+                    }
+                }
+        }else {
+            findNavController().navigate(R.id.action_global_homeFragment)
+        }
+
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

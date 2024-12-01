@@ -1,11 +1,16 @@
 package com.example.taskapp.data.model
 
 import android.os.Parcelable
+import com.example.taskapp.util.FirebaseHelper
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Task(
-    val Id: String,
-    val Description: String,
-    val Status: Status = com.example.taskapp.data.model.Status.TODO
-) : Parcelable
+    var Id: String = "",
+    var Description: String = "",
+    var Status: Status = com.example.taskapp.data.model.Status.TODO
+) : Parcelable {
+    init {
+        Id =  FirebaseHelper.getDatabase().push().key ?: ""
+    }
+}
